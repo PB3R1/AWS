@@ -4,7 +4,7 @@ from AWSIoTPythonSDK.MQTTLib import AWSIoTMQTTClient
 
 # AWS IoT Configuration
 client = AWSIoTMQTTClient("raspberrypi")
-client.configureEndpoint("d06831331ruuwf49ow23v-ats.iot.ap-south-1.amazonaws.com", 8883)
+client.configureEndpoint("END POINT LINK", 8883)
 client.configureCredentials("/home/pi/certs/rootCA.pem", "/home/pi/certs/private.key", "/home/pi/certs/certificate.pem")
 
 def update_wifi_config(client, userdata, message):
